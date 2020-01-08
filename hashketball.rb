@@ -221,7 +221,7 @@ def big_shoe_rebounds()
     while index < game_hash[team][:players].length
     
       if game_hash[team][:players][index][:shoe] > big_shoe_guy[:shoe_size]
-        big_shoe_guy[:name] = game_hash[team][:players][index][:player_name]
+        big_shoe_guy[:rebounds] = game_hash[team][:players][index][:rebounds]
         big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
         binding.pry
       end
