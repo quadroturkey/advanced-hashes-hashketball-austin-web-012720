@@ -192,7 +192,14 @@ def player_stats(name)
       
       if game_hash[team][:players][index][:player_name] == name
         player_stats = {
-          
+          number: game_hash[team][:players][index][:number], 
+          shoe: game_hash[team][:players][index][:shoe],
+          points: game_hash[team][:players][index][:points],
+          rebounds: game_hash[team][:players][index][:rebounds],
+          assits: game_hash[team][:players][index][:assits],
+          steals: game_hash[team][:players][index][:steals],
+          blocks: game_hash[team][:players][index][:blocks],
+          slam_dunks: game_hash[team][:players][index][:slam_dunks]
         }
         binding.pry
       end
