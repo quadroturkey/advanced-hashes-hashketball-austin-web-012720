@@ -176,6 +176,7 @@ def player_numbers(team_name)
   game_hash.each do |team, data|
     index = 0 
     binding.pry
+  end
 end
 
 
