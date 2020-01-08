@@ -191,6 +191,9 @@ def player_stats(name)
     while index < game_hash[team][:players].length
       
       if game_hash[team][:players][index][:player_name] == name
+        player_stats = {
+          
+        }
         binding.pry
       end
       
