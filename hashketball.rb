@@ -209,21 +209,30 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds()
+  
   big_shoe_guy = {
     :name => "nobody",
     :shoe_size => 0 
   }
+  
   game_hash.each do |team, data|
+    
     index = 0 
     while index < game_hash[team][:players].length
+    
       if game_hash[team][:players][index][:shoe] > big_shoe_guy[:shoe_size]
         big_shoe_guy[:name] = game_hash[team][:players][index][:player_name]
         big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
+        binding.pry
       end
+      
       index += 1 
+      
     end
   end
+  
   big_shoe_guy[:name]
+  
 end
 
 
