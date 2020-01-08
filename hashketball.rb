@@ -220,11 +220,11 @@ def big_shoe_rebounds()
       if game_hash[team][:players][index][:shoe] > big_shoe_guy[:shoe_size]
         big_shoe_guy[:name] = game_hash[team][:players][index][:player_name]
         big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
-        
       end
       index += 1 
     end
   end
+  big_shoe_guy[:name]
 end
 
 
