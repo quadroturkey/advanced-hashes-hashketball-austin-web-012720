@@ -201,6 +201,7 @@ def player_stats(name)
           blocks: game_hash[team][:players][index][:blocks],
           slam_dunks: game_hash[team][:players][index][:slam_dunks]
         }
+        return player_stats
         binding.pry
       end
       
