@@ -193,7 +193,6 @@ def player_stats(name)
         binding.pry
         return game_hash[team][:players][index]
       end
-      
       index += 1
     end
   end
