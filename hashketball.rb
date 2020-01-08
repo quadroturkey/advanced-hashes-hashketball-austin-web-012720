@@ -191,6 +191,7 @@ def player_stats(name)
     while index < data[:players].length
       if name == data[:players][index][:player_name]
         return data[:players][index]
+        binding.pry
       end
       index += 1
     end
