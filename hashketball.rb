@@ -227,7 +227,24 @@ def big_shoe_rebounds()
   big_shoe_guy[:rebounds]
 end
 
-
+def most_points_scored()
+  big_shoe_guy = {
+    :rebounds => 0,
+    :shoe_size => 0 
+  }
+  game_hash.each do |team, data|
+    index = 0 
+    while index < game_hash[team][:players].length
+      if game_hash[team][:players][index][:shoe] > big_shoe_guy[:shoe_size]
+        big_shoe_guy[:rebounds] = game_hash[team][:players][index][:rebounds]
+        big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
+        #binding.pry
+      end
+      index += 1 
+    end
+  end
+  big_shoe_guy[:rebounds]
+end
 
 
 
