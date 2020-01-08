@@ -231,7 +231,7 @@ def big_shoe_rebounds()
     end
   end
   
-  big_shoe_guy[:name]
+  big_shoe_guy[:rebounds]
   
 end
 
