@@ -236,8 +236,8 @@ def most_points_scored()
     index = 0 
     while index < game_hash[team][:players].length
       if game_hash[team][:players][index][:points] > most_points_player[:points]
-        big_shoe_guy[:rebounds] = game_hash[team][:players][index][:rebounds]
-        big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
+        most_points_player[:name] = game_hash[team][:players][index][:player_name]
+        most_points_player[:points] = game_hash[team][:players][index][:points]
         #binding.pry
       end
       index += 1 
