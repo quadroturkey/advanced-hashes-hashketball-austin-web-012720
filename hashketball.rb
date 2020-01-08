@@ -211,7 +211,7 @@ end
 def big_shoe_rebounds()
   
   big_shoe_guy = {
-    :name => "nobody",
+    :rebounds => 0,
     :shoe_size => 0 
   }
   
