@@ -182,7 +182,7 @@ def player_numbers(team_name)
     
   end
   numbers
-  binding.pry
+  #binding.pry
 end
 
 
