@@ -176,14 +176,13 @@ def player_numbers(team_name)
   game_hash.each do |team, data|
     index = 0
     if team_name == data[:team_name]
-    while index < data[:players].length
-      numbers << data[:players][index][:number]
-      index += 1 
+      while index < data[:players].length
+        numbers << data[:players][index][:number]
+        index += 1 
+      end
     end
-    
   end
   numbers
-  #binding.pry
 end
 
 
