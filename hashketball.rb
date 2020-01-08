@@ -189,10 +189,9 @@ def player_stats(name)
   game_hash.each do |team, data|
     index = 0
     while index < game_hash[team][:players].length
-      if name == game_hash[team][:players][index]
-        binding.pry
-        return game_hash[team][:players][index]
-      end
+      
+      binding.pry
+      
       index += 1
     end
   end
