@@ -187,7 +187,7 @@ end
 
 def player_stats(name)
   game_hash.each do |team, data|
-    index = 0 
+    index = 0
     while index < data[:players].length
       if name == data[:players][index][:player_name]
         return data[:players][index]
@@ -196,6 +196,7 @@ def player_stats(name)
       index += 1
     end
   end
+  
 end
 
 
