@@ -179,7 +179,7 @@ def player_numbers(team_name)
       player_numbers << data[:players][index]
       index += 1 
     end
-    binding.pry
+    #binding.pry
   end
   player_numbers
 end
