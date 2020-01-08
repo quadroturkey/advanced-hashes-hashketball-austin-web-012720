@@ -202,7 +202,7 @@ def player_stats(name)
           slam_dunks: game_hash[team][:players][index][:slam_dunks]
         }
         return player_stats
-        binding.pry
+        #binding.pry
       end
       
       index += 1
