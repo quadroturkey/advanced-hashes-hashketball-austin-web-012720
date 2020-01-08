@@ -238,12 +238,11 @@ def most_points_scored()
       if game_hash[team][:players][index][:points] > most_points_player[:points]
         most_points_player[:name] = game_hash[team][:players][index][:player_name]
         most_points_player[:points] = game_hash[team][:players][index][:points]
-        #binding.pry
       end
       index += 1 
     end
   end
-  big_shoe_guy[:rebounds]
+  most_points_player[:name]
 end
 
 
