@@ -171,6 +171,30 @@ def team_names()
   teams
 end
 
-def player_numbers
+def player_numbers(team_name)
+  player_numbers = []
+  game_hash.each do |team, data|
+    index = 0 
+    binding.pry
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
