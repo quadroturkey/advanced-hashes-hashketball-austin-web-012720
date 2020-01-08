@@ -235,7 +235,7 @@ def most_points_scored()
   game_hash.each do |team, data|
     index = 0 
     while index < game_hash[team][:players].length
-      if game_hash[team][:players][index][:shoe] > big_shoe_guy[:shoe_size]
+      if game_hash[team][:players][index][:points] > most_points_player[:points]
         big_shoe_guy[:rebounds] = game_hash[team][:players][index][:rebounds]
         big_shoe_guy[:shoe_size] = game_hash[team][:players][index][:shoe]
         #binding.pry
