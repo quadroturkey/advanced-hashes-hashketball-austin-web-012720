@@ -190,8 +190,10 @@ def player_stats(name)
     index = 0
     while index < game_hash[team][:players].length
       
+      if game_hash[team][:players][index][:player_name] == name
+        binding.pry
+      end
       
-      binding.pry
       index += 1
     end
   end
