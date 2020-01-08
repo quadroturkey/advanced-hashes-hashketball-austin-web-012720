@@ -160,7 +160,7 @@ def team_colors(team_name)
       return data[:colors]
     end
     
-    binding.pry
+   # binding.pry
     
   end
 end
