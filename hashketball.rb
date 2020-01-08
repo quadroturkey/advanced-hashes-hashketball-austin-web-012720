@@ -213,7 +213,6 @@ def big_shoe_rebounds()
     :name => "nobody",
     :shoe_size => 0 
   }
-
   game_hash.each do |team, data|
     index = 0 
     while index < game_hash[team][:players].length
