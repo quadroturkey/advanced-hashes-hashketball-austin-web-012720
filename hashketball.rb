@@ -298,10 +298,17 @@ def long_name_steals_a_ton
   game_hash.each do |team, data|
     player_list = game_hash[team][:players]
     player_list.each do |player_index|
+      
       if player_index[:player_name].length > long_name[:name_length]
         long_name[:name] = player_index[:player_name]
         long_name[:name_length] = player_index[:player_name].length
       end
+      
+      if player_index[:steals] > steals_name[:steals]
+        steals_name[:name] = player_index[:player_name]
+        steals_name[:steals] = player_index[:steals]
+      end
+      
     end
   end
   long_name[:name]
