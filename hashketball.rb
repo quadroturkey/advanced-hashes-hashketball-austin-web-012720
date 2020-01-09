@@ -256,6 +256,7 @@ def winning_team()
     
     while index < game_hash[team][:players].length
       team_points += game_hash[team][:players][index][:points]
+      current_team = game_hash[team][:team_name]
     end
     
   end
