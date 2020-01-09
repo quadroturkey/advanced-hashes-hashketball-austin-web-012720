@@ -264,6 +264,18 @@ def winning_team()
   end
 end
 
+def player_with_longest_name()
+  
+  long_name = {
+    :name => "reese",
+    :name_length => 5 
+  }
+  
+  game_hash.each do |team, data|
+    
+  end
+end
+
 
 
 
