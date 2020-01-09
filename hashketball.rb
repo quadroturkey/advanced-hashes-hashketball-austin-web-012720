@@ -245,23 +245,18 @@ def most_points_scored()
 end
 
 def winning_team()
-  
-
-  
-  game_hash.each do |team, data|
-    
-    
-    index = 0 
-    team_points = 0 
-    
-    while index < game_hash[team][:players].length
-      team_points += game_hash[team][:players][index][:points]
-      current_team = game_hash[team][:team_name]
-      index += 1 
-    end
-    binding.pry
+  home_team_score = 0 
+  away_team_score = 0 
+  index = 0 
+  while index < game_hash[:home][:players].length
+    home_team_score += game_hash[:home][:players][index][:points]
+    index += 1 
   end
-  
+  index = 0 
+  while index < game_hash[:away][:players].length
+    away_team_score += game_hash[:away][:players][index][:points]
+    index += 1 
+  end
 end
 
 
