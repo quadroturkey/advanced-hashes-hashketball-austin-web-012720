@@ -246,15 +246,16 @@ end
 
 def winning_team()
   
-  winner_hash = {}
+
   
   game_hash.each do |team, data|
     
-    winner_hash[game_hash[team][:team_name]] = 0 
+    
     index = 0 
+    team_points = 0 
     
     while index < game_hash[team][:players].length
-      
+      team_points += game_hash[team][:players][index][:points]
     end
     
   end
