@@ -311,7 +311,11 @@ def long_name_steals_a_ton
       
     end
   end
-  long_name[:name]
+  if long_name[:name] == steals_name[:name]
+    return true
+  else
+    return false
+  end
 end
 
 
