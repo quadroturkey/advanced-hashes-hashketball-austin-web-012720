@@ -274,10 +274,9 @@ def player_with_longest_name()
   game_hash.each do |team, data|
     player_list = game_hash[team][:players]
     player_list.each do |player_index|
+      
       binding.pry
     end
-    
-    
   end
 end
 
